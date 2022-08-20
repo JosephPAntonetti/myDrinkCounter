@@ -34,10 +34,12 @@ struct RecentActivity: View {
                     .foregroundColor(.gray)
                 }
             }
+            #if os(iOS)
             Button("OPEN_HEALTH_ACTION",
                    action: {
                 UIApplication.shared.openURL(URL(string:"x-apple-health://")!)
             })
+            #endif
         }
         .task {
             formatter.unitsStyle = .full

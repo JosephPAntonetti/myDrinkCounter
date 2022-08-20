@@ -13,6 +13,7 @@
 "RECENT_ACTIVITY" = "Recent Activity";
 "NO_RECENT_ACTIVITY" = "No Recent Activity";
 "OPEN_HEALTH_ACTION" = "See More in Apple Health";
+"PERMISSION_NOT_GRANTED_ERROR" = "This app requires access to HealthKit to function.";
 
 // Settings
 "SETTINGS_TITLE" = "Settings";

@@ -29,11 +29,12 @@ struct ContentView: View {
                 }
                 RecentActivity(samples: recentDrinks)
             }
-            .alert("This app requires access to HealthKit to function.", isPresented: $showRequiredPermissionDialog, actions: {})
+            .alert("PERMISSION_NOT_GRANTED_ERROR", isPresented: $showRequiredPermissionDialog, actions: {})
             .task {
-                HKHealthStore.Shared.getDrinkCount(onLoad: {samples in self.recentDrinks = HealthSample.fromHealthKit(samples: samples)}, onFail: {self.showRequiredPermissionDialog = true})
+                HKHealthStore.Shared.getDrinkCount(onLoad: {samples in withAnimation {self.recentDrinks = HealthSample.fromHealthKit(samples: samples)}}, onFail: {self.showRequiredPermissionDialog = true})
             }
             .navigationTitle("APP_NAME")
+            #if os(iOS)
             .toolbar {
                 Button(action: {
                     showingSettings.toggle()
@@ -44,6 +45,7 @@ struct ContentView: View {
             .sheet(isPresented: $showingSettings, content: {
                 Settings()
             })
+            #endif
         }
     }
 }

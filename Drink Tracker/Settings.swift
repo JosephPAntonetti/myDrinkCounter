@@ -28,12 +28,7 @@ struct Settings: View {
                     .padding()
                     Text("OPEN_SOURCE_DESCRIPTION")
                     Button("OPEN_SOURCE_CTA"){
-                        
-                    }
-                }
-                Section {
-                    Button("REVIEW_CTA"){
-                        
+                        UIApplication.shared.openURL(URL(string:"https://github.com/JosephPAntonetti/DrinkTracker/tree/main")!)
                     }
                 }
             }

@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E549B01028A3656200BE798A /* LogDrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B00E28A3656200BE798A /* LogDrinkButton.swift */; };
-		E549B01328A3666100BE798A /* DrinkCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01128A3666100BE798A /* DrinkCounter.swift */; };
-		E549B01628B0ED7D00BE798A /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01428B0ED7D00BE798A /* WatchContentView.swift */; };
 		E549B01828B1323B00BE798A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01728B1323B00BE798A /* Settings.swift */; };
-		E549B01928B1323B00BE798A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01728B1323B00BE798A /* Settings.swift */; };
 		E549B01B28B1338700BE798A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E549B01A28B1338700BE798A /* Localizable.strings */; };
 		E549B01C28B1338700BE798A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E549B01A28B1338700BE798A /* Localizable.strings */; };
 		E549B01E28B1346000BE798A /* Plurals.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = E549B01D28B1346000BE798A /* Plurals.stringsdict */; };
@@ -23,6 +19,12 @@
 		E549B02A28B13C3D00BE798A /* DrinkCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02928B13C3D00BE798A /* DrinkCount.swift */; };
 		E549B02D28B13CD600BE798A /* HealthSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02C28B13CD600BE798A /* HealthSample.swift */; };
 		E549B02F28B13FD800BE798A /* RecentActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02E28B13FD800BE798A /* RecentActivity.swift */; };
+		E549B03028B1426B00BE798A /* LogDrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02728B13B1500BE798A /* LogDrinkButton.swift */; };
+		E549B03128B1426E00BE798A /* DrinkCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02928B13C3D00BE798A /* DrinkCount.swift */; };
+		E549B03228B142A500BE798A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BF16428A31DE1002928D6 /* ContentView.swift */; };
+		E549B03328B142AB00BE798A /* HealthSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02C28B13CD600BE798A /* HealthSample.swift */; };
+		E549B03428B142CA00BE798A /* RecentActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02E28B13FD800BE798A /* RecentActivity.swift */; };
+		E549B03528B142D500BE798A /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02428B1371500BE798A /* ListSection.swift */; };
 		E56A870C28A32E88000891E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56A870B28A32E88000891E6 /* Assets.xcassets */; };
 		E56A870D28A32EB7000891E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56A870B28A32E88000891E6 /* Assets.xcassets */; };
 		E56A870F28A33BAD000891E6 /* HKHeathStoreExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A870E28A33BAD000891E6 /* HKHeathStoreExtensions.swift */; };
@@ -49,9 +51,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E549B00E28A3656200BE798A /* LogDrinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDrinkButton.swift; sourceTree = "<group>"; };
-		E549B01128A3666100BE798A /* DrinkCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCounter.swift; sourceTree = "<group>"; };
-		E549B01428B0ED7D00BE798A /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
 		E549B01728B1323B00BE798A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		E549B01A28B1338700BE798A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		E549B01D28B1346000BE798A /* Plurals.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Plurals.stringsdict; sourceTree = "<group>"; };
@@ -108,6 +107,7 @@
 		E549B02628B13B0800BE798A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				E549B02428B1371500BE798A /* ListSection.swift */,
 				E549B02728B13B1500BE798A /* LogDrinkButton.swift */,
 				E549B02928B13C3D00BE798A /* DrinkCount.swift */,
 				E549B02E28B13FD800BE798A /* RecentActivity.swift */,
@@ -157,7 +157,6 @@
 				E59BF16928A31DE2002928D6 /* Preview Content */,
 				E549B01728B1323B00BE798A /* Settings.swift */,
 				E549B01A28B1338700BE798A /* Localizable.strings */,
-				E549B02428B1371500BE798A /* ListSection.swift */,
 			);
 			path = "Drink Tracker";
 			sourceTree = "<group>";
@@ -182,13 +181,10 @@
 			isa = PBXGroup;
 			children = (
 				E56A870A28A32BD4000891E6 /* Drink Tracker WatchOS Watch App.entitlements */,
-				E549B01128A3666100BE798A /* DrinkCounter.swift */,
 				E56A870928A32B7B000891E6 /* Drink-Tracker-WatchOS-Watch-App-Info.plist */,
 				E59BF19128A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift */,
-				E549B00E28A3656200BE798A /* LogDrinkButton.swift */,
 				E59BF19528A32A07002928D6 /* Assets.xcassets */,
 				E59BF19728A32A07002928D6 /* Preview Content */,
-				E549B01428B0ED7D00BE798A /* WatchContentView.swift */,
 			);
 			path = "Drink Tracker WatchOS Watch App";
 			sourceTree = "<group>";
@@ -324,13 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E549B01928B1323B00BE798A /* Settings.swift in Sources */,
+				E549B03128B1426E00BE798A /* DrinkCount.swift in Sources */,
+				E549B03228B142A500BE798A /* ContentView.swift in Sources */,
 				E549B02328B1363200BE798A /* BundleExtensions.swift in Sources */,
 				E59BF19228A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift in Sources */,
-				E549B01028A3656200BE798A /* LogDrinkButton.swift in Sources */,
-				E549B01628B0ED7D00BE798A /* WatchContentView.swift in Sources */,
-				E549B01328A3666100BE798A /* DrinkCounter.swift in Sources */,
+				E549B03328B142AB00BE798A /* HealthSample.swift in Sources */,
+				E549B03428B142CA00BE798A /* RecentActivity.swift in Sources */,
+				E549B03028B1426B00BE798A /* LogDrinkButton.swift in Sources */,
 				E56A871028A33DFE000891E6 /* HKHeathStoreExtensions.swift in Sources */,
+				E549B03528B142D500BE798A /* ListSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

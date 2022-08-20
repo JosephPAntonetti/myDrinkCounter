@@ -11,7 +11,7 @@ import SwiftUI
 struct Drink_Tracker_WatchOS_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            WatchContentView()
+            ContentView()
         }
     }
 }
