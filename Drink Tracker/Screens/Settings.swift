@@ -31,6 +31,11 @@ struct Settings: View {
                         UIApplication.shared.openURL(URL(string:"https://github.com/JosephPAntonetti/DrinkTracker/tree/main")!)
                     }
                 }
+                Section {
+                    Button("PRIVACY_POLICY_CTA"){
+                        UIApplication.shared.openURL(URL(string:"https://josephpantonetti.github.io/DrinkTracker/")!)
+                    }
+                }
             }
             .navigationTitle("SETTINGS_TITLE")
             .navigationBarTitleDisplayMode(.inline)
