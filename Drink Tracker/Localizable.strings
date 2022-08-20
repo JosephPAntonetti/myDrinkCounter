@@ -6,7 +6,8 @@
   
 */
 
-"APP_NAME" = "Drink Tracker";
+"APP_NAME" = "myDrinkCounter";
+"DRINK_SCREEN_TITLE" = "Your Drinking";
 "TODAY" = "Today";
 "LOG_DRINK_BUTTON_LABEL" = "Log Drink";
 "SAMPLE_LABEL" = "Drink recorded";

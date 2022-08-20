@@ -32,7 +32,7 @@ struct ContentView: View {
             .task {
                 HKHealthStore.Shared.getDrinkCount(onLoad: {samples in withAnimation {self.recentDrinks = HealthSample.fromHealthKit(samples: samples)}}, onFail: {self.showRequiredPermissionDialog = true})
             }
-            .navigationTitle("APP_NAME")
+            .navigationTitle("DRINK_SCREEN_TITLE")
             #if os(iOS)
             .toolbar {
                 Button(action: {
