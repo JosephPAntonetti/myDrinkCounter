@@ -24,15 +24,6 @@ extension HKHealthStore {
         }
     }
     
-    func unrecordDrink(sample : HKQuantitySample?, onUnrecord: @escaping () -> Void) {
-        
-        if (sample != nil) {
-            self.delete(sample!, withCompletion: {(success, error) -> Void in
-                onUnrecord()
-            })
-        }
-    }
-    
     func getDrinkCount(onLoad : @escaping ([HKSample]?) -> Void, onFail: @escaping () -> Void) {
         let typesToRead : Set<HKObjectType> = [NumberOfDrinksSampleType]
         

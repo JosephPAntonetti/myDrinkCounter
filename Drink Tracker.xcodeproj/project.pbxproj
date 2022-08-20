@@ -21,10 +21,10 @@
 		E549B02F28B13FD800BE798A /* RecentActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02E28B13FD800BE798A /* RecentActivity.swift */; };
 		E549B03028B1426B00BE798A /* LogDrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02728B13B1500BE798A /* LogDrinkButton.swift */; };
 		E549B03128B1426E00BE798A /* DrinkCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02928B13C3D00BE798A /* DrinkCount.swift */; };
-		E549B03228B142A500BE798A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BF16428A31DE1002928D6 /* ContentView.swift */; };
 		E549B03328B142AB00BE798A /* HealthSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02C28B13CD600BE798A /* HealthSample.swift */; };
 		E549B03428B142CA00BE798A /* RecentActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02E28B13FD800BE798A /* RecentActivity.swift */; };
 		E549B03528B142D500BE798A /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02428B1371500BE798A /* ListSection.swift */; };
+		E549B03728B1441300BE798A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BF16428A31DE1002928D6 /* ContentView.swift */; };
 		E56A870C28A32E88000891E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56A870B28A32E88000891E6 /* Assets.xcassets */; };
 		E56A870D28A32EB7000891E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56A870B28A32E88000891E6 /* Assets.xcassets */; };
 		E56A870F28A33BAD000891E6 /* HKHeathStoreExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A870E28A33BAD000891E6 /* HKHeathStoreExtensions.swift */; };
@@ -123,6 +123,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E549B03628B143FF00BE798A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E59BF16428A31DE1002928D6 /* ContentView.swift */,
+				E549B01728B1323B00BE798A /* Settings.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		E59BF15628A31DE1002928D6 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +154,7 @@
 		E59BF16128A31DE1002928D6 /* Drink Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				E549B03628B143FF00BE798A /* Screens */,
 				E549B02B28B13CCB00BE798A /* Models */,
 				E549B02628B13B0800BE798A /* Components */,
 				E549B02028B1362700BE798A /* Extensions */,
@@ -152,10 +162,8 @@
 				E56A870B28A32E88000891E6 /* Assets.xcassets */,
 				E59BF17528A328EB002928D6 /* Drink-Tracker-Info.plist */,
 				E59BF16228A31DE1002928D6 /* Drink_TrackerApp.swift */,
-				E59BF16428A31DE1002928D6 /* ContentView.swift */,
 				E59BF16828A31DE2002928D6 /* Drink_Tracker.entitlements */,
 				E59BF16928A31DE2002928D6 /* Preview Content */,
-				E549B01728B1323B00BE798A /* Settings.swift */,
 				E549B01A28B1338700BE798A /* Localizable.strings */,
 			);
 			path = "Drink Tracker";
@@ -321,11 +329,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E549B03128B1426E00BE798A /* DrinkCount.swift in Sources */,
-				E549B03228B142A500BE798A /* ContentView.swift in Sources */,
 				E549B02328B1363200BE798A /* BundleExtensions.swift in Sources */,
 				E59BF19228A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift in Sources */,
 				E549B03328B142AB00BE798A /* HealthSample.swift in Sources */,
 				E549B03428B142CA00BE798A /* RecentActivity.swift in Sources */,
+				E549B03728B1441300BE798A /* ContentView.swift in Sources */,
 				E549B03028B1426B00BE798A /* LogDrinkButton.swift in Sources */,
 				E56A871028A33DFE000891E6 /* HKHeathStoreExtensions.swift in Sources */,
 				E549B03528B142D500BE798A /* ListSection.swift in Sources */,

@@ -10,7 +10,6 @@ import HealthKit
 
 struct ContentView: View {
     
-    
     @State var recentDrinks : [HealthSample] = []
     
     @State var showRequiredPermissionDialog = false
