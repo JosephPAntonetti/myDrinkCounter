@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Drink Tracker
+
+  Created by Joseph Antonetti on 8/20/22.
+  
+*/
+
+"APP_NAME" = "Drink Tracker";
+"TODAY" = "Today";
+"LOG_DRINK_BUTTON_LABEL" = "Log Drink";
+"SAMPLE_LABEL" = "Drink recorded";
+"RECENT_ACTIVITY" = "Recent Activity";
+"NO_RECENT_ACTIVITY" = "No Recent Activity";
+"OPEN_HEALTH_ACTION" = "See More in Apple Health";
+
+// Settings
+"SETTINGS_TITLE" = "Settings";
+"ABOUT_SECTION" = "About";
+"CREATED_BY_SUBTITLE" = "Created by Joseph Antonetti";
+"REVIEW_CTA" = "Leave a review.";

@@ -7,19 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E549B01028A3656200BE798A /* LogDrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B00E28A3656200BE798A /* LogDrinkButton.swift */; };
+		E549B01328A3666100BE798A /* DrinkCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01128A3666100BE798A /* DrinkCounter.swift */; };
+		E549B01628B0ED7D00BE798A /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01428B0ED7D00BE798A /* WatchContentView.swift */; };
+		E549B01828B1323B00BE798A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01728B1323B00BE798A /* Settings.swift */; };
+		E549B01928B1323B00BE798A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B01728B1323B00BE798A /* Settings.swift */; };
+		E549B01B28B1338700BE798A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E549B01A28B1338700BE798A /* Localizable.strings */; };
+		E549B01C28B1338700BE798A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E549B01A28B1338700BE798A /* Localizable.strings */; };
+		E549B01E28B1346000BE798A /* Plurals.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = E549B01D28B1346000BE798A /* Plurals.stringsdict */; };
+		E549B01F28B1346000BE798A /* Plurals.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = E549B01D28B1346000BE798A /* Plurals.stringsdict */; };
+		E549B02228B1363200BE798A /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02128B1363200BE798A /* BundleExtensions.swift */; };
+		E549B02328B1363200BE798A /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02128B1363200BE798A /* BundleExtensions.swift */; };
+		E549B02528B1371500BE798A /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02428B1371500BE798A /* ListSection.swift */; };
+		E549B02828B13B1500BE798A /* LogDrinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02728B13B1500BE798A /* LogDrinkButton.swift */; };
+		E549B02A28B13C3D00BE798A /* DrinkCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02928B13C3D00BE798A /* DrinkCount.swift */; };
+		E549B02D28B13CD600BE798A /* HealthSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E549B02C28B13CD600BE798A /* HealthSample.swift */; };
+		E56A870C28A32E88000891E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56A870B28A32E88000891E6 /* Assets.xcassets */; };
+		E56A870D28A32EB7000891E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56A870B28A32E88000891E6 /* Assets.xcassets */; };
+		E56A870F28A33BAD000891E6 /* HKHeathStoreExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A870E28A33BAD000891E6 /* HKHeathStoreExtensions.swift */; };
+		E56A871028A33DFE000891E6 /* HKHeathStoreExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A870E28A33BAD000891E6 /* HKHeathStoreExtensions.swift */; };
 		E59BF16328A31DE1002928D6 /* Drink_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BF16228A31DE1002928D6 /* Drink_TrackerApp.swift */; };
 		E59BF16528A31DE1002928D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BF16428A31DE1002928D6 /* ContentView.swift */; };
-		E59BF16728A31DE2002928D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59BF16628A31DE2002928D6 /* Assets.xcassets */; };
 		E59BF16B28A31DE2002928D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59BF16A28A31DE2002928D6 /* Preview Assets.xcassets */; };
+		E59BF19228A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59BF19128A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift */; };
+		E59BF19628A32A07002928D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59BF19528A32A07002928D6 /* Assets.xcassets */; };
+		E59BF19928A32A07002928D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E59BF19828A32A07002928D6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E59BF18A28A329BD002928D6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E549B00E28A3656200BE798A /* LogDrinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDrinkButton.swift; sourceTree = "<group>"; };
+		E549B01128A3666100BE798A /* DrinkCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCounter.swift; sourceTree = "<group>"; };
+		E549B01428B0ED7D00BE798A /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
+		E549B01728B1323B00BE798A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E549B01A28B1338700BE798A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		E549B01D28B1346000BE798A /* Plurals.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Plurals.stringsdict; sourceTree = "<group>"; };
+		E549B02128B1363200BE798A /* BundleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensions.swift; sourceTree = "<group>"; };
+		E549B02428B1371500BE798A /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
+		E549B02728B13B1500BE798A /* LogDrinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDrinkButton.swift; sourceTree = "<group>"; };
+		E549B02928B13C3D00BE798A /* DrinkCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCount.swift; sourceTree = "<group>"; };
+		E549B02C28B13CD600BE798A /* HealthSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthSample.swift; sourceTree = "<group>"; };
+		E56A870928A32B7B000891E6 /* Drink-Tracker-WatchOS-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Drink-Tracker-WatchOS-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E56A870A28A32BD4000891E6 /* Drink Tracker WatchOS Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Drink Tracker WatchOS Watch App.entitlements"; sourceTree = "<group>"; };
+		E56A870B28A32E88000891E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		E56A870E28A33BAD000891E6 /* HKHeathStoreExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKHeathStoreExtensions.swift; sourceTree = "<group>"; };
 		E59BF15F28A31DE1002928D6 /* Drink Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59BF16228A31DE1002928D6 /* Drink_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink_TrackerApp.swift; sourceTree = "<group>"; };
 		E59BF16428A31DE1002928D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E59BF16628A31DE2002928D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E59BF16828A31DE2002928D6 /* Drink_Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Drink_Tracker.entitlements; sourceTree = "<group>"; };
 		E59BF16A28A31DE2002928D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E59BF17528A328EB002928D6 /* Drink-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Drink-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E59BF17E28A329BD002928D6 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		E59BF18F28A32A06002928D6 /* Drink Tracker WatchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drink Tracker WatchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59BF19128A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink_Tracker_WatchOSApp.swift; sourceTree = "<group>"; };
+		E59BF19528A32A07002928D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E59BF19828A32A07002928D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +84,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E59BF18C28A32A06002928D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E549B02028B1362700BE798A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E56A870E28A33BAD000891E6 /* HKHeathStoreExtensions.swift */,
+				E549B02128B1363200BE798A /* BundleExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E549B02628B13B0800BE798A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E549B02728B13B1500BE798A /* LogDrinkButton.swift */,
+				E549B02928B13C3D00BE798A /* DrinkCount.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E549B02B28B13CCB00BE798A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E549B02C28B13CD600BE798A /* HealthSample.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E59BF15628A31DE1002928D6 = {
 			isa = PBXGroup;
 			children = (
 				E59BF16128A31DE1002928D6 /* Drink Tracker */,
+				E59BF19028A32A06002928D6 /* Drink Tracker WatchOS Watch App */,
+				E59BF17D28A329BD002928D6 /* Frameworks */,
 				E59BF16028A31DE1002928D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				E59BF15F28A31DE1002928D6 /* Drink Tracker.app */,
+				E59BF18F28A32A06002928D6 /* Drink Tracker WatchOS Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +142,19 @@
 		E59BF16128A31DE1002928D6 /* Drink Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				E549B02B28B13CCB00BE798A /* Models */,
+				E549B02628B13B0800BE798A /* Components */,
+				E549B02028B1362700BE798A /* Extensions */,
+				E549B01D28B1346000BE798A /* Plurals.stringsdict */,
+				E56A870B28A32E88000891E6 /* Assets.xcassets */,
+				E59BF17528A328EB002928D6 /* Drink-Tracker-Info.plist */,
 				E59BF16228A31DE1002928D6 /* Drink_TrackerApp.swift */,
 				E59BF16428A31DE1002928D6 /* ContentView.swift */,
-				E59BF16628A31DE2002928D6 /* Assets.xcassets */,
 				E59BF16828A31DE2002928D6 /* Drink_Tracker.entitlements */,
 				E59BF16928A31DE2002928D6 /* Preview Content */,
+				E549B01728B1323B00BE798A /* Settings.swift */,
+				E549B01A28B1338700BE798A /* Localizable.strings */,
+				E549B02428B1371500BE798A /* ListSection.swift */,
 			);
 			path = "Drink Tracker";
 			sourceTree = "<group>";
@@ -65,6 +163,37 @@
 			isa = PBXGroup;
 			children = (
 				E59BF16A28A31DE2002928D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E59BF17D28A329BD002928D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E59BF17E28A329BD002928D6 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E59BF19028A32A06002928D6 /* Drink Tracker WatchOS Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				E56A870A28A32BD4000891E6 /* Drink Tracker WatchOS Watch App.entitlements */,
+				E549B01128A3666100BE798A /* DrinkCounter.swift */,
+				E56A870928A32B7B000891E6 /* Drink-Tracker-WatchOS-Watch-App-Info.plist */,
+				E59BF19128A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift */,
+				E549B00E28A3656200BE798A /* LogDrinkButton.swift */,
+				E59BF19528A32A07002928D6 /* Assets.xcassets */,
+				E59BF19728A32A07002928D6 /* Preview Content */,
+				E549B01428B0ED7D00BE798A /* WatchContentView.swift */,
+			);
+			path = "Drink Tracker WatchOS Watch App";
+			sourceTree = "<group>";
+		};
+		E59BF19728A32A07002928D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E59BF19828A32A07002928D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,6 +208,7 @@
 				E59BF15B28A31DE1002928D6 /* Sources */,
 				E59BF15C28A31DE1002928D6 /* Frameworks */,
 				E59BF15D28A31DE1002928D6 /* Resources */,
+				E59BF18A28A329BD002928D6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -87,6 +217,23 @@
 			name = "Drink Tracker";
 			productName = "Drink Tracker";
 			productReference = E59BF15F28A31DE1002928D6 /* Drink Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E59BF18E28A32A06002928D6 /* Drink Tracker WatchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E59BF19A28A32A07002928D6 /* Build configuration list for PBXNativeTarget "Drink Tracker WatchOS Watch App" */;
+			buildPhases = (
+				E59BF18B28A32A06002928D6 /* Sources */,
+				E59BF18C28A32A06002928D6 /* Frameworks */,
+				E59BF18D28A32A06002928D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Drink Tracker WatchOS Watch App";
+			productName = "Drink Tracker WatchOS Watch App";
+			productReference = E59BF18F28A32A06002928D6 /* Drink Tracker WatchOS Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +247,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					E59BF15E28A31DE1002928D6 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					E59BF18E28A32A06002928D6 = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -118,6 +268,7 @@
 			projectRoot = "";
 			targets = (
 				E59BF15E28A31DE1002928D6 /* Drink Tracker */,
+				E59BF18E28A32A06002928D6 /* Drink Tracker WatchOS Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -128,7 +279,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59BF16B28A31DE2002928D6 /* Preview Assets.xcassets in Resources */,
-				E59BF16728A31DE2002928D6 /* Assets.xcassets in Resources */,
+				E549B01B28B1338700BE798A /* Localizable.strings in Resources */,
+				E549B01E28B1346000BE798A /* Plurals.stringsdict in Resources */,
+				E56A870C28A32E88000891E6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59BF18D28A32A06002928D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E549B01F28B1346000BE798A /* Plurals.stringsdict in Resources */,
+				E59BF19928A32A07002928D6 /* Preview Assets.xcassets in Resources */,
+				E549B01C28B1338700BE798A /* Localizable.strings in Resources */,
+				E56A870D28A32EB7000891E6 /* Assets.xcassets in Resources */,
+				E59BF19628A32A07002928D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +305,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59BF16528A31DE1002928D6 /* ContentView.swift in Sources */,
+				E56A870F28A33BAD000891E6 /* HKHeathStoreExtensions.swift in Sources */,
+				E549B01828B1323B00BE798A /* Settings.swift in Sources */,
 				E59BF16328A31DE1002928D6 /* Drink_TrackerApp.swift in Sources */,
+				E549B02D28B13CD600BE798A /* HealthSample.swift in Sources */,
+				E549B02A28B13C3D00BE798A /* DrinkCount.swift in Sources */,
+				E549B02228B1363200BE798A /* BundleExtensions.swift in Sources */,
+				E549B02828B13B1500BE798A /* LogDrinkButton.swift in Sources */,
+				E549B02528B1371500BE798A /* ListSection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59BF18B28A32A06002928D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E549B01928B1323B00BE798A /* Settings.swift in Sources */,
+				E549B02328B1363200BE798A /* BundleExtensions.swift in Sources */,
+				E59BF19228A32A06002928D6 /* Drink_Tracker_WatchOSApp.swift in Sources */,
+				E549B01028A3656200BE798A /* LogDrinkButton.swift in Sources */,
+				E549B01628B0ED7D00BE798A /* WatchContentView.swift in Sources */,
+				E549B01328A3666100BE798A /* DrinkCounter.swift in Sources */,
+				E56A871028A33DFE000891E6 /* HKHeathStoreExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Drink Tracker/Drink_Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -269,15 +456,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Drink-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink Counter";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This permission is required to write your drink count to HealthKit";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This permission is required to update your drink count in HealthKit";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = "15.0 ";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
@@ -285,10 +476,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joeantonetti.Drink-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,6 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Drink Tracker/Drink_Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -305,15 +499,19 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Drink-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink Counter";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This permission is required to write your drink count to HealthKit";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This permission is required to update your drink count in HealthKit";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = "15.0 ";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.5;
@@ -321,10 +519,83 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joeantonetti.Drink-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E59BF19B28A32A07002928D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Drink Tracker WatchOS Watch App/Drink Tracker WatchOS Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Drink Tracker WatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M8EWD7S57X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Drink-Tracker-WatchOS-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink Counter";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This permission is required to write your drink count to HealthKit";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This permission is required to update your drink count in HealthKit";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .drinktrackerwatchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
+			};
+			name = Debug;
+		};
+		E59BF19C28A32A07002928D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Drink Tracker WatchOS Watch App/Drink Tracker WatchOS Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Drink Tracker WatchOS Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M8EWD7S57X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Drink-Tracker-WatchOS-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink Counter";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This permission is required to write your drink count to HealthKit";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This permission is required to update your drink count in HealthKit";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .drinktrackerwatchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Release;
 		};
@@ -345,6 +616,15 @@
 			buildConfigurations = (
 				E59BF16F28A31DE2002928D6 /* Debug */,
 				E59BF17028A31DE2002928D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E59BF19A28A32A07002928D6 /* Build configuration list for PBXNativeTarget "Drink Tracker WatchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E59BF19B28A32A07002928D6 /* Debug */,
+				E59BF19C28A32A07002928D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
