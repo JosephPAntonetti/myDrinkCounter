@@ -13,7 +13,11 @@ struct HomeController: View {
             (samples, onLogDrink) in
             HistoryModelProvider(samples: samples) {
                 historyModel in
+#if os(iOS)
                 Home(historyModel: historyModel, onLogDrink: onLogDrink)
+#else
+                WatchHome(historyModel: historyModel, onLogDrink: onLogDrink)
+#endif
             }
         }
     }

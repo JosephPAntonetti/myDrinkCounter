@@ -21,13 +21,7 @@ struct Home: View {
             List {
                 Section {
                     HStack(alignment: .center) {
-                        Spacer()
-                        StatView(title: "LAST_HOUR", value: historyModel.lastHour, limit: historyModel.hourlyLimit)
-                        Spacer()
-                        Divider()
-                        Spacer()
-                        StatView(title: "TODAY", value: historyModel.lastDay, limit: historyModel.dailyLimit)
-                        Spacer()
+                        StatsView(historyModel: historyModel, style: .full)
                     }
                     .padding(.top)
                     HStack(alignment: .center) {
@@ -71,34 +65,6 @@ struct Home: View {
             }
             .sheet(isPresented: $showAbout) {
                 About()
-            }
-        }
-    }
-}
-
-struct StatView : View {
-    
-    let title : LocalizedStringKey
-    let value : Int
-    let limit : Int
-    
-    var body : some View {
-        VStack(alignment: .leading) {
-            Text(title)
-                .font(.system(.caption, design: .rounded))
-                .bold()
-                .foregroundColor(.accentColor)
-            Text("drink-count \(value)", tableName: "Plurals")
-                .font(.system(.title, design: .rounded))
-                .bold()
-            if (value > limit) {
-                Text("ABOVE_LIMIT")
-                    .foregroundColor(.red)
-                    .font(.system(.caption, design: .rounded))
-            } else {
-                Text("")
-                    .foregroundColor(.red)
-                    .font(.system(.caption, design: .rounded))
             }
         }
     }
