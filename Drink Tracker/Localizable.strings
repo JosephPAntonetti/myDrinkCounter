@@ -7,20 +7,31 @@
 */
 
 "APP_NAME" = "myDrinkCounter";
-"DRINK_SCREEN_TITLE" = "Your Drinking";
-"TODAY" = "Today";
+"DRINK_SCREEN_TITLE" = "Summary";
+"LAST_HOUR" = "Last Hour";
+"TODAY" = "Last 24 Hours";
 "LOG_DRINK_BUTTON_LABEL" = "Log Drink";
+"PLUS_TWO" = "+2";
+"PLUS_FIVE" = "+5";
+"PLUS_TEN" = "+10";
 "SAMPLE_LABEL" = "Drink recorded";
 "RECENT_ACTIVITY" = "Recent Activity";
 "NO_RECENT_ACTIVITY" = "No Recent Activity";
 "OPEN_HEALTH_ACTION" = "See More in Apple Health";
 "PERMISSION_NOT_GRANTED_ERROR" = "This app requires access to HealthKit to function.";
+"PREVIOUS_DAYS" = "Previous Days";
+"ABOVE_LIMIT" = "Above limit!";
 
 // Settings
 "SETTINGS_TITLE" = "Settings";
+"HOURLY_LIMIT" = "Hourly Limit";
+"DAILY_LIMIT" = "Daily Limit";
+
+// About
 "ABOUT_SECTION" = "About";
 "CREATED_BY_SUBTITLE" = "Created by Joseph Antonetti";
 "REVIEW_CTA" = "Leave a review";
 "OPEN_SOURCE_DESCRIPTION" = "This application is open-source and free to modify. To view the code for this application, see the GitHub link below.";
 "OPEN_SOURCE_CTA" = "View source";
 "PRIVACY_POLICY_CTA" = "Privacy policy";
+

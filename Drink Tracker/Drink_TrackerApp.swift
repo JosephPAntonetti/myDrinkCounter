@@ -11,7 +11,7 @@ import SwiftUI
 struct Drink_TrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeController()
         }
     }
 }

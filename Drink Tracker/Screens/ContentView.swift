@@ -42,7 +42,7 @@ struct ContentView: View {
                 })
             }
             .sheet(isPresented: $showingSettings, content: {
-                Settings()
+                About()
             })
             #endif
         }
