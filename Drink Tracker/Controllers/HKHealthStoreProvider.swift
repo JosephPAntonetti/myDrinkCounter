@@ -8,6 +8,8 @@
 import SwiftUI
 import HealthKit
 
+let NumberOfDrinksSampleType = HKSampleType.quantityType(forIdentifier: .numberOfAlcoholicBeverages)!
+
 struct HKHealthStoreProvider<Content>: View where Content : View{
     
     private let store = HKHealthStore()
