@@ -36,7 +36,7 @@ struct HistoryModelProvider<Content>: View where Content : View {
         get {
             let dict = Dictionary(grouping: samples, by: { Calendar.current.startOfDay(for: $0.startDate) })
             
-            return (0...19)
+            return (0..<7)
                 .map({Calendar.current.date(byAdding: .day, value: -1 * $0, to: Calendar.current.startOfDay(for: Date()))!})
                 .map({PreviousDay(date: $0, quantity: countDrinks(dict[$0] ?? []))})
         }

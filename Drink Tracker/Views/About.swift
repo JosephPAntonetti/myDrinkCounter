@@ -11,7 +11,7 @@ struct About: View {
     var body: some View {
         NavigationView {
             List {
-                ListSection(title: "ABOUT_SECTION"){
+                Section("ABOUT_SECTION"){
                     HStack {
                         Image(uiImage: Bundle.main.icon!)
                             .cornerRadius(15)

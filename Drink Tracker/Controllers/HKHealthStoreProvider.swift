@@ -12,6 +12,10 @@ let NumberOfDrinksSampleType = HKSampleType.quantityType(forIdentifier: .numberO
 
 struct HKHealthStoreProvider<Content>: View where Content : View{
     
+    @Environment(\.scenePhase) var scenePhase
+    
+    @State var toggle = false
+    
     private let store = HKHealthStore()
     
     @State private var samples : [HKSample] = []
@@ -22,14 +26,19 @@ struct HKHealthStoreProvider<Content>: View where Content : View{
     var body: some View {
         content(samples, addDrinkSample)
             .alert("PERMISSION_NOT_GRANTED_ERROR", isPresented: $showPermissionDialog, actions: {})
-            .task {
+            .task(id: toggle) {
                 requestAuthorization()
+            }
+            .onChange(of: scenePhase) { newPhase in
+                if newPhase == .active {
+                    toggle.toggle()
+                }
             }
     }
     
     private func addDrinkSample(quantity: Int) {
         let drinkQuantity = HKQuantity(unit: HKUnit.count(), doubleValue: Double(quantity))
-            
+        
         let drinkSample = HKQuantitySample(type: NumberOfDrinksSampleType, quantity: drinkQuantity, start: Date(), end: Date())
         
         store.save(drinkSample) {(_, _) in }
@@ -41,11 +50,11 @@ struct HKHealthStoreProvider<Content>: View where Content : View{
         let typesToWrite : Set<HKSampleType> = [NumberOfDrinksSampleType]
         
         store.requestAuthorization(toShare: typesToWrite, read: typesToRead, completion: { (userWasShownPermissionView, error) in
-                if (store.authorizationStatus(for: NumberOfDrinksSampleType) != .sharingAuthorized) {
-                    showPermissionDialog = true
-                } else {
-                    self.enableObservation()
-                }
+            if (store.authorizationStatus(for: NumberOfDrinksSampleType) != .sharingAuthorized) {
+                showPermissionDialog = true
+            } else {
+                self.enableObservation()
+            }
         })
     }
     
@@ -54,10 +63,10 @@ struct HKHealthStoreProvider<Content>: View where Content : View{
         
         let query = HKObserverQuery(sampleType: NumberOfDrinksSampleType, predicate: nil) {
             query, completionHandler, error in
-                if (error == nil) {
-                    self.updateSamples()
-                    completionHandler()
-                }
+            if (error == nil) {
+                self.updateSamples()
+                completionHandler()
+            }
         }
         
         store.execute(query)
@@ -75,7 +84,7 @@ struct HKHealthStoreProvider<Content>: View where Content : View{
                 self.samples = samples ?? []
             }
         })
-
+        
         store.execute(query)
     }
 }

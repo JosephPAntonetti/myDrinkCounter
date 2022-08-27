@@ -13,33 +13,42 @@ struct Home: View {
     
     let onLogDrink : (Int) -> Void
     
-    @State var showSettings = false
     @State var showAbout = false
     
     var body: some View {
         NavigationView {
             List {
-                Section {
-                    HStack(alignment: .center) {
-                        StatsView(historyModel: historyModel, style: .full)
-                    }
-                    .padding(.top)
-                    HStack(alignment: .center) {
+                OverviewSection(entries: [
+                    OverviewSection.Entry(label: "LAST_HOUR", current: historyModel.lastHour, limit: historyModel.hourlyLimit),
+                    OverviewSection.Entry(label: "TODAY", current: historyModel.lastDay, limit: historyModel.dailyLimit)
+                ], onAddDrink: onLogDrink)
+                WeekSection(dailyLimit: historyModel.dailyLimit, entries: historyModel.previousDays.map({WeekSection.Entry(date: $0.date, count: $0.quantity)}))
+                Section("Your Limits") {
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text("Hourly Limit")
+                                .font(.caption)
+                                .bold()
+                                .foregroundColor(.accentColor)
+                            Text("\(historyModel.hourlyLimit) drinks")
+                                .bold()
+                        }
                         Spacer()
-                        ActionButton(label: "LOG_DRINK_BUTTON_LABEL", style: .primary, onPress: {
-                            onLogDrink(1)
-                        })
-                        ActionButton(label: "PLUS_TWO", style: .secondary, onPress: {
-                            onLogDrink(2)
-                        })
-                        ActionButton(label: "PLUS_FIVE", style: .secondary, onPress: {
-                            onLogDrink(5)
-                        })
+                        VStack(alignment: .leading) {
+                            Text("Daily Limit")
+                                .font(.caption)
+                                .bold()
+                                .foregroundColor(.accentColor)
+                            Text("\(historyModel.dailyLimit) drinks")
+                                .bold()
+                                .font(.body)
+                        }
                         Spacer()
                     }
                     .padding(.vertical)
+                    NavigationLink("Edit Limits", destination: Settings())
+                        .foregroundColor(.accentColor)
                 }
-                PreviousDaysView(limit: historyModel.dailyLimit, days: historyModel.previousDays)
                 Section {
                     Button("OPEN_HEALTH_ACTION",
                            action: {
@@ -49,19 +58,21 @@ struct Home: View {
             }
             .navigationTitle("DRINK_SCREEN_TITLE")
             .toolbar {
-                 ToolbarItem(placement: .navigationBarTrailing) {
-                     Menu(content: {
-                         Button("SETTINGS_TITLE") {
-                             showSettings = true
-                         }
-                         Button("ABOUT_SECTION") {
-                             showAbout = true
-                         }
-                     }, label: { Label("", systemImage: "ellipsis.circle")})
-                  }
-              }
-            .sheet(isPresented: $showSettings) {
-                Settings()
+                ToolbarItemGroup(placement: .bottomBar) {
+                    Button("Log Drink") {
+                        onLogDrink(1)
+                        
+                    }
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Menu(content: {
+                        Button("ABOUT_SECTION") {
+                            showAbout = true
+                        }
+                    }, label: { Label("", systemImage: "ellipsis.circle")})
+                }
             }
             .sheet(isPresented: $showAbout) {
                 About()
@@ -72,7 +83,7 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        let previousDays = (0...10).map { i in
+        let previousDays = (0..<7).map { i in
             PreviousDay(date: Calendar.current.date(byAdding: .day, value: i, to: Date())!, quantity: i)
         }
         

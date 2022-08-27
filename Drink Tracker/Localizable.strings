@@ -10,6 +10,7 @@
 "DRINK_SCREEN_TITLE" = "Summary";
 "LAST_HOUR" = "Last Hour";
 "TODAY" = "Last 24 Hours";
+"THIS_WEEK" = "This Week";
 "LOG_DRINK_BUTTON_LABEL" = "Log Drink";
 "PLUS_TWO" = "+2";
 "PLUS_FIVE" = "+5";

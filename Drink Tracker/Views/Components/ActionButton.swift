@@ -32,9 +32,14 @@ struct ActionButton: View {
             Button(action: onPress)
             {
                 text
+                #if os(iOS)
                     .padding(.horizontal)
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
+                #endif
             }
             .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.capsule)
         case .secondary:
             Button(action: onPress)
             {

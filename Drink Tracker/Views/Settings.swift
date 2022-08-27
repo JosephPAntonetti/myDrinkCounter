@@ -13,27 +13,25 @@ struct Settings: View {
     @AppStorage(Constants.DAY_LIMIT_PREFERENCE) var dailyLimit : Int = 5
     
     var body: some View {
-        NavigationView {
-            List {
-                Section("HOURLY_LIMIT") {
-                    HStack {
-                        Text("drink-count \(hourlyLimit)", tableName: "Plurals")
-                            .textCase(.none)
-                        Spacer()
-                        Stepper("", value: $hourlyLimit)
-                    }
-                }
-                Section("DAILY_LIMIT") {
-                    HStack {
-                        Text("drink-count \(dailyLimit)", tableName: "Plurals")
-                            .textCase(.none)
-                        Spacer()
-                        Stepper("", value: $dailyLimit)
-                    }
+        List {
+            Section("HOURLY_LIMIT") {
+                HStack {
+                    Text("drink-count \(hourlyLimit)", tableName: "Plurals")
+                        .textCase(.none)
+                    Spacer()
+                    Stepper("", value: $hourlyLimit)
                 }
             }
-            .navigationTitle("SETTINGS_TITLE")
+            Section("DAILY_LIMIT") {
+                HStack {
+                    Text("drink-count \(dailyLimit)", tableName: "Plurals")
+                        .textCase(.none)
+                    Spacer()
+                    Stepper("", value: $dailyLimit)
+                }
+            }
         }
+        .navigationTitle("SETTINGS_TITLE")
     }
 }
 
